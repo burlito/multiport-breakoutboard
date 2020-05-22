@@ -31,12 +31,12 @@ Text Label 3600 2100 0    50   ~ 0
 Wire Wire Line
 	3100 2000 3150 2000
 $Comp
-L Switch:SW_SPDT_MSM SW?
+L Switch:SW_SPDT_MSM SW1
 U 1 1 5EC777AD
 P 3350 2000
-F 0 "SW?" H 3350 2285 50  0000 C CNN
+F 0 "SW1" H 3350 2285 50  0000 C CNN
 F 1 "SW_SPDT_MSM" H 3350 2194 50  0000 C CNN
-F 2 "" H 3350 2000 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 3350 2000 50  0001 C CNN
 F 3 "~" H 3350 2000 50  0001 C CNN
 	1    3350 2000
 	1    0    0    -1  
@@ -105,12 +105,12 @@ Entry Wire Line
 Entry Wire Line
 	4050 1800 4150 1900
 $Comp
-L Connector:Screw_Terminal_01x10 J?
+L Connector:Screw_Terminal_01x10 J4
 U 1 1 5EC784F5
 P 4700 2300
-F 0 "J?" H 4780 2292 50  0000 L CNN
+F 0 "J4" H 4780 2292 50  0000 L CNN
 F 1 "MULT_terminal" H 4780 2201 50  0000 L CNN
-F 2 "" H 4700 2300 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-10-5.08_1x10_P5.08mm_Horizontal" H 4700 2300 50  0001 C CNN
 F 3 "~" H 4700 2300 50  0001 C CNN
 	1    4700 2300
 	1    0    0    -1  
@@ -122,12 +122,12 @@ Wire Wire Line
 Entry Wire Line
 	2550 1900 2650 2000
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5EC77C30
 P 2950 2000
-F 0 "R?" H 3020 2046 50  0000 L CNN
+F 0 "R1" H 3020 2046 50  0000 L CNN
 F 1 "100R" H 3020 1955 50  0000 L CNN
-F 2 "" V 2880 2000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 2880 2000 50  0001 C CNN
 F 3 "~" H 2950 2000 50  0001 C CNN
 	1    2950 2000
 	0    1    1    0   
@@ -224,23 +224,23 @@ USB_ID
 Text Label 2150 1750 1    50   ~ 0
 USB_D+
 $Comp
-L Connector:Screw_Terminal_01x05 J?
+L Connector:Screw_Terminal_01x05 J1
 U 1 1 5EC77F4F
 P 1100 3000
-F 0 "J?" H 1180 3042 50  0000 L CNN
+F 0 "J1" H 1180 3042 50  0000 L CNN
 F 1 "USB_terminal" H 1180 2951 50  0000 L CNN
-F 2 "" H 1100 3000 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal" H 1100 3000 50  0001 C CNN
 F 3 "~" H 1100 3000 50  0001 C CNN
 	1    1100 3000
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J2
 U 1 1 5EC78F39
 P 1200 2050
-F 0 "J?" H 1257 2517 50  0000 C CNN
+F 0 "J2" H 1257 2517 50  0000 C CNN
 F 1 "USB_B_Micro" H 1257 2426 50  0000 C CNN
-F 2 "" H 1350 2000 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1350 2000 50  0001 C CNN
 F 3 "~" H 1350 2000 50  0001 C CNN
 	1    1200 2050
 	1    0    0    -1  
@@ -312,12 +312,12 @@ VBUS
 Text Label 2050 1750 1    50   ~ 0
 USB_D-
 $Comp
-L Connector:Conn_01x15_Male J?
+L Connector:Conn_01x15_Male J3
 U 1 1 5EC9000C
 P 2650 750
-F 0 "J?" V 2485 728 50  0000 C CNN
+F 0 "J3" V 2485 728 50  0000 C CNN
 F 1 "soldier_pads" V 2576 728 50  0000 C CNN
-F 2 "" H 2650 750 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.40mm" H 2650 750 50  0001 C CNN
 F 3 "~" H 2650 750 50  0001 C CNN
 	1    2650 750 
 	0    1    1    0   
