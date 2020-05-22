@@ -202,21 +202,6 @@ Text Label 1350 3100 0    50   ~ 0
 USB_D-
 Text Label 1350 3200 0    50   ~ 0
 VBUS
-Connection ~ 1200 2500
-Wire Wire Line
-	1100 2500 1200 2500
-Wire Wire Line
-	1100 2450 1100 2500
-Text Label 1300 2500 0    50   ~ 0
-USB_GND
-Text Label 1500 2250 0    50   ~ 0
-USB_ID
-Text Label 1500 2150 0    50   ~ 0
-USB_D-
-Text Label 1500 2050 0    50   ~ 0
-USB_D+
-Text Label 1500 1850 0    50   ~ 0
-VBUS
 Text Label 2350 1750 1    50   ~ 0
 USB_GND
 Text Label 2250 1750 1    50   ~ 0
@@ -233,17 +218,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Ho
 F 3 "~" H 1100 3000 50  0001 C CNN
 	1    1100 3000
 	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:USB_B_Micro J2
-U 1 1 5EC78F39
-P 1200 2050
-F 0 "J2" H 1257 2517 50  0000 C CNN
-F 1 "USB_B_Micro" H 1257 2426 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1350 2000 50  0001 C CNN
-F 3 "~" H 1350 2000 50  0001 C CNN
-	1    1200 2050
-	1    0    0    -1  
 $EndComp
 Entry Wire Line
 	2350 1750 2450 1850
@@ -266,47 +240,35 @@ Wire Wire Line
 Wire Wire Line
 	1950 1750 1950 950 
 Entry Wire Line
-	1800 2050 1900 2150
+	1750 2050 1850 2150
 Entry Wire Line
-	1800 2150 1900 2250
+	1750 2150 1850 2250
 Entry Wire Line
-	1800 2250 1900 2350
+	1750 2250 1850 2350
 Entry Wire Line
-	1800 1850 1900 1950
-Wire Wire Line
-	1800 1850 1500 1850
-Wire Wire Line
-	1800 2050 1500 2050
-Wire Wire Line
-	1800 2150 1500 2150
-Wire Wire Line
-	1800 2250 1500 2250
+	1750 1850 1850 1950
 Entry Wire Line
-	1800 2500 1900 2600
-Wire Wire Line
-	1800 2500 1200 2500
-Wire Wire Line
-	1200 2500 1200 2450
+	1750 2500 1850 2600
 Entry Wire Line
-	1800 2800 1900 2900
+	1750 2800 1850 2900
 Entry Wire Line
-	1800 2900 1900 3000
+	1750 2900 1850 3000
 Entry Wire Line
-	1800 3000 1900 3100
+	1750 3000 1850 3100
 Entry Wire Line
-	1800 3100 1900 3200
+	1750 3100 1850 3200
 Entry Wire Line
-	1800 3200 1900 3300
+	1750 3200 1850 3300
 Wire Wire Line
-	1300 2800 1800 2800
+	1300 2800 1750 2800
 Wire Wire Line
-	1300 2900 1800 2900
+	1300 2900 1750 2900
 Wire Wire Line
-	1300 3000 1800 3000
+	1300 3000 1750 3000
 Wire Wire Line
-	1300 3100 1800 3100
+	1300 3100 1750 3100
 Wire Wire Line
-	1300 3200 1800 3200
+	1300 3200 1750 3200
 Text Label 1950 1750 1    50   ~ 0
 VBUS
 Text Label 2050 1750 1    50   ~ 0
@@ -317,7 +279,7 @@ U 1 1 5EC9000C
 P 2650 750
 F 0 "J3" V 2485 728 50  0000 C CNN
 F 1 "soldier_pads" V 2576 728 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.40mm" H 2650 750 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.40mm" H 2650 750 50  0001 C CNN
 F 3 "~" H 2650 750 50  0001 C CNN
 	1    2650 750 
 	0    1    1    0   
@@ -3227,15 +3189,53 @@ A4 50 28 14 0A 45 33 D4 46 52 28 14 0A 85 A2 19 6A 23 29 14 0A 85 42 D1 0C B5 91
 EndData
 $EndBitmap
 Wire Bus Line
+	1850 1850 1850 3350
+Wire Bus Line
+	1850 1850 2500 1850
+Wire Bus Line
+	2550 1650 3900 1650
+Wire Bus Line
 	2550 1650 2550 1950
-Wire Bus Line
-	3900 1650 3900 2250
-Wire Bus Line
-	1900 1850 2500 1850
-Wire Bus Line
-	1900 1850 1900 3350
 Wire Bus Line
 	4050 1650 4050 2800
 Wire Bus Line
-	2550 1650 3900 1650
+	3900 1650 3900 2250
+Wire Wire Line
+	1150 2500 1150 2450
+Wire Wire Line
+	1750 2500 1150 2500
+Wire Wire Line
+	1750 2250 1450 2250
+Wire Wire Line
+	1750 2150 1450 2150
+Wire Wire Line
+	1750 2050 1450 2050
+Wire Wire Line
+	1750 1850 1450 1850
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5EC78F39
+P 1150 2050
+F 0 "J2" H 1207 2517 50  0000 C CNN
+F 1 "USB_B_Micro" H 1207 2426 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1300 2000 50  0001 C CNN
+F 3 "~" H 1300 2000 50  0001 C CNN
+	1    1150 2050
+	1    0    0    -1  
+$EndComp
+Text Label 1450 1850 0    50   ~ 0
+VBUS
+Text Label 1450 2050 0    50   ~ 0
+USB_D+
+Text Label 1450 2150 0    50   ~ 0
+USB_D-
+Text Label 1450 2250 0    50   ~ 0
+USB_ID
+Text Label 1250 2500 0    50   ~ 0
+USB_GND
+Wire Wire Line
+	1050 2450 1050 2500
+Wire Wire Line
+	1050 2500 1150 2500
+Connection ~ 1150 2500
 $EndSCHEMATC
